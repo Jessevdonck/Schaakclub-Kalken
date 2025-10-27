@@ -4,11 +4,9 @@ import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
 
 export function Hero() {
-  const scrollToAbout = () => {
-    const aboutSection = document.querySelector("#about");
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: "smooth" });
-    }
+  const scrollTo = (selector: string) => {
+    const section = document.querySelector(selector);
+    if (section) section.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -37,25 +35,25 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <Button
               size="lg"
-              className="text-lg px-8 cursor-pointer scroll-smooth"
-              asChild
+              className="text-lg px-8 cursor-pointer"
+              onClick={() => scrollTo("#contact")}
             >
-              <a href="#contact">Contact</a>
+              Contact
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="text-lg px-8 bg-white/10 text-white border-white/30 hover:bg-white/20 cursor-pointer scroll-smooth"
-              asChild
+              className="text-lg px-8 bg-white/10 text-white border-white/30 hover:bg-white/20 cursor-pointer"
+              onClick={() => scrollTo("#about")}
             >
-              <a href="#about">Meer info</a>
+              Meer info
             </Button>
           </div>
         </div>
       </div>
 
       <button
-        onClick={scrollToAbout}
+        onClick={() => scrollTo("#about")}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce hover:text-primary transition-colors cursor-pointer z-10"
         aria-label="Scroll naar beneden"
       >
