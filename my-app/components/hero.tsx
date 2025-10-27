@@ -21,7 +21,7 @@ export function Hero() {
         backgroundPosition: "center",
       }}
     >
-      <div className="absolute inset-0 bg-black/60 z-[1]" />
+      <div className="absolute inset-0 bg-black/60 z-1" />
 
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto space-y-8">
@@ -35,13 +35,17 @@ export function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-            <Button size="lg" className="text-lg px-8 cursor-pointer" asChild>
+            <Button
+              size="lg"
+              className="text-lg px-8 cursor-pointer scroll-smooth"
+              asChild
+            >
               <a href="#contact">Contact</a>
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="text-lg px-8 bg-white/10 text-white border-white/30 hover:bg-white/20 cursor-pointer"
+              className="text-lg px-8 bg-white/10 text-white border-white/30 hover:bg-white/20 cursor-pointer scroll-smooth"
               asChild
             >
               <a href="#about">Meer info</a>
