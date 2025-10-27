@@ -27,11 +27,14 @@ jobs:
         with:
           node-version: 20
           cache: npm
+          cache-dependency-path: my-app/package-lock.json # <== belangrijk!
 
       - name: Install dependencies
+        working-directory: ./my-app
         run: npm ci
 
       - name: Build static Next.js site
+        working-directory: ./my-app
         run: |
           npm run build
           npx next export
@@ -39,7 +42,7 @@ jobs:
       - name: Upload static site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./my-app/out # <== out-map zit ook in my-app
 
   deploy:
     runs-on: ubuntu-latest
