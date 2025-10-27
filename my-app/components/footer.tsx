@@ -9,6 +9,19 @@ export function Footer() {
               © {new Date().getFullYear()} Schaakclub Kalken. Alle rechten
               voorbehouden.
             </p>
+
+            <p>
+              Gemaakt door{" "}
+              <a
+                href="https://www.jessevdonck.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-primary-foreground"
+              >
+                Jesse Vaerendonck
+              </a>
+              .
+            </p>
           </div>
         </div>
       </div>
