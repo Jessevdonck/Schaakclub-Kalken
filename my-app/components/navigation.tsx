@@ -34,19 +34,20 @@ export function Navigation() {
     <nav className="fixed top-4 left-0 right-0 z-50 px-4">
       {/* Desktop background - full width */}
       <div
-        className={`hidden md:block transition-all duration-300 rounded-full px-6 md:px-8 py-2 max-w-4xl mx-auto ${
+        className={`hidden md:block transition-all duration-300 rounded-full px-5 py-2 w-fit mx-auto ${
           isScrolled
             ? "bg-black/40 backdrop-blur-2xl shadow-lg border border-white/20"
             : "bg-black/30 backdrop-blur-xl border border-white/15"
         }`}
       >
-        <div className="flex items-center justify-between h-12 w-full">
+        <div className="flex items-center justify-center h-12 w-full">
+          {/* Desktop Navigation */}
           <div className="flex items-center gap-6 lg:gap-8">
             {navLinks.map((link) => (
               <button
                 key={link.href}
                 onClick={() => scrollToSection(link.href)}
-                className="text-white/90 hover:text-white transition-colors font-medium text-sm cursor-pointer"
+                className="text-white/90 hover:text-white transition-colors font-medium text-base cursor-pointer"
               >
                 {link.label}
               </button>
