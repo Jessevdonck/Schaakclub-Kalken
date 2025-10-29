@@ -14,7 +14,7 @@ export function Hero() {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       style={{
         backgroundImage:
-          "url(https://hebbkx1anhila5yf.public.blob.vercel-storage.com/foto2-72Gb92LkQ8OfmTf86ORsG1GLfnA6L0.jpg)",
+          "url(/Bredene/IMG-20250314-WA0004.jpg)",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
