@@ -13,8 +13,9 @@ export function Hero() {
     <section
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       style={{
+        // Note: no leading slash so it works with basePath on GitHub Pages
         backgroundImage:
-          "url(/Bredene/IMG-20250314-WA0004.jpg)",
+          "url(Bredene/IMG-20250314-WA0004.jpg)",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
