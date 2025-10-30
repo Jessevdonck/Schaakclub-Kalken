@@ -28,7 +28,7 @@ export function Schedule() {
               Speeldata
             </h2>
             <p className="text-xl text-muted-foreground text-balance">
-              Elke tweede donderdag van de maand om 19:30 uur in Estaminet In Den Bouw te Kalken. 
+              Elke tweede donderdag van de maand om 20:00 uur in Estaminet In Den Bouw te Kalken. 
             </p>
           </div>
 
