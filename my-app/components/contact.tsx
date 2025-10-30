@@ -32,7 +32,7 @@ export function Contact() {
                         <br />
                         Kalken
                         <br />
-                        Elke 2e donderdag om 19:30u
+                        Elke 2e donderdag om 20:00u
                       </p>
                     </div>
                   </div>
