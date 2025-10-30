@@ -47,7 +47,7 @@ export function Schedule() {
                   <Clock className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold mb-1">Wanneer</h3>
-                    <p className="text-sm text-muted-foreground">Elke tweede donderdag van de maand, start om 19:30</p>
+                    <p className="text-sm text-muted-foreground">Elke tweede donderdag van de maand, start om 20:00</p>
                   </div>
                 </div>
               </div>
