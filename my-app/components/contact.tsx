@@ -44,7 +44,7 @@ export function Contact() {
                     <div>
                       <h3 className="font-semibold text-lg mb-2">Email</h3>
                       <p className="text-muted-foreground">
-                        info@schaakclubkalken.be
+                        carliersven@hotmail.com
                       </p>
                     </div>
                   </div>
